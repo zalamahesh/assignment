@@ -25,22 +25,24 @@
 </style>
 
 <body>
-  <div>
+  
+  <form action="">
+    <div>
 
     <H1>Student Registraration Form</H1>
     <!-- first lable -->
     <label for="">First Name : </label> <br>
-    <input type="button" value="Enter your first  name   ">
+    <input type="text" placeholder="Enter your first  name   ">
     <br>
     <label for=""> Last Name : </label> <br>
-    <input type="button" value="Enter your Last name   "><br>
+    <input type="text" placeholder="Enter your Last name   "><br>
 
     <label for="">Email :</label> <br>
     <!-- for email -->
-    <input type="button" value="it should contain  @..   "><br>
+    <input type="text" placeholder="it should contain  @..   "><br>
 
     <label for=""> Mobile :</label> <br>
-    <input type="button" value="only 10 disit are allowed"><br>
+    <input type="number"  class="mobile"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /><br>
 
     <label for=""> Gender : </label><br>
     <!-- for radio button -->
@@ -100,6 +102,7 @@
      <button>Registered</button>
 
   </div>
+  </form>
 </body>
 
 </html>
